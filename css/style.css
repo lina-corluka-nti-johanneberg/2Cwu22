@@ -1,0 +1,132 @@
+a{
+    text-decoration: none;
+    color: black;
+}
+
+body{
+    margin: 0;
+}
+
+@media screen and (min-width: 501px) {
+    
+#container{
+    width: 100%;
+    display: grid;
+    display: flex;
+    justify-content: center;
+    grid-template-areas:
+    'hd'
+    'mn'
+    'ft' ;
+    grid-template-rows:80px auto 25% ;
+
+}
+
+.header{
+    grid-area: hd;
+    width: 100%;
+    background-color: rgb(211, 151, 164);
+    
+}
+
+.navdesktop{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.menuitem{
+    font-size: 20px;
+    color: ghostwhite;
+}
+
+.logo{
+    height: 20vh;
+}
+
+
+#main1{
+    grid-area: mn;
+    grid-template-areas: 
+    'pic'
+    'vel'
+    'omd'
+    'inf';
+    grid-row: 300px 280px 280px 100px;
+
+}
+
+#mainbild{
+    grid-area: pic;
+    background-image: url(../img/spapic.jpg) ;
+    
+}
+
+#velkomsinfo{
+    grid-area: vel;
+    grid-template-areas: 
+    'tex aspic';
+
+}
+
+#velkomsinfo{
+    grid-area: tex;
+}
+
+#loggabild{
+    grid-area: aspic;
+
+}
+
+#omdome{
+    grid-area: omd;
+    grid-template-areas: 
+    'omtx omtx'
+    'omp1 omp2'
+    'omp3 omp4';
+}
+
+#txtomdome{
+    grid-area: omtx;
+}
+
+#omp1{
+    grid-area: omp1;
+}
+
+#omp2{
+    grid-area: omp2;
+
+}
+
+#omp3{
+    grid-area: omp3;
+}
+
+#omp4{
+    grid-area: omp4;
+
+}
+
+#information{
+    grid-area: inf;
+    grid-template-areas: 
+    'tel opt loc';
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+#opt{
+    grid-area: opt;
+}
+
+#tele{
+    grid-area: tel;
+}
+
+#location{
+    grid-area: loc;
+}
+
+
+}
