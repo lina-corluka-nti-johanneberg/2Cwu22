@@ -3,8 +3,12 @@ a{
     color: black;
 }
 
+
+
 body{
     margin: 0;
+    width: 100%;
+    
 }
 
 @media screen and (min-width: 501px) {
@@ -12,13 +16,11 @@ body{
 #container{
     width: 100%;
     display: grid;
-    display: flex;
-    justify-content: center;
     grid-template-areas:
     'hd'
     'mn'
     'ft' ;
-    grid-template-rows:80px auto 25% ;
+    grid-template-rows:auto auto 30vh ;
 
 }
 
@@ -45,6 +47,11 @@ body{
     height: 20vh;
 }
 
+.footer{
+    grid-area: ft;
+    background-color: darkgrey;
+}
+
 
 #main1{
     grid-area: mn;
@@ -53,30 +60,57 @@ body{
     'vel'
     'omd'
     'inf';
-    grid-row: 300px 280px 280px 100px;
+    grid-template-rows: 40vh 60vh auto 40vh;  
+    display: grid;
 
 }
 
 #mainbild{
     grid-area: pic;
-    background-image: url(../img/spapic.jpg) ;
+    background-image: url(/img/blomma.jpg) ;
+    background-size: cover;
+    background-position-y: -500px;
+    display: grid;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
     
+}
+
+#boka{
+background-color: coral;
+padding: 10px;
+border-radius: 5px;
+height: 10%;
+width: 11%;
+margin-bottom: 5px;
+text-align: center;
+
+
 }
 
 #velkomsinfo{
     grid-area: vel;
     grid-template-areas: 
-    'tex aspic';
+    'tex aspic1';
+    grid-template-columns: 1fr 1fr;
+    background-color: antiquewhite;
+    display: grid;
 
 }
 
-#velkomsinfo{
+#information{
     grid-area: tex;
+
 }
 
 #loggabild{
-    grid-area: aspic;
+    grid-area: aspic1;
 
+}
+
+#logotyp1{
+height: 300px;
 }
 
 #omdome{
@@ -85,48 +119,206 @@ body{
     'omtx omtx'
     'omp1 omp2'
     'omp3 omp4';
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 10vw 15vw 15vw;
+    display: grid;
+    
+
 }
 
 #txtomdome{
     grid-area: omtx;
+    background-color: rgb(45, 99, 99);
 }
 
 #omp1{
     grid-area: omp1;
+    background-color: aquamarine;
 }
 
 #omp2{
     grid-area: omp2;
+    background-color: black;
 
 }
 
 #omp3{
     grid-area: omp3;
+    background-color: chartreuse;
 }
 
 #omp4{
     grid-area: omp4;
+    background-color: cornflowerblue;
 
 }
 
-#information{
+#information2{
     grid-area: inf;
     grid-template-areas: 
     'tel opt loc';
     grid-template-columns: 1fr 1fr 1fr;
+    display: grid;
 }
 
 #opt{
     grid-area: opt;
+    background-color: hotpink;
+
+}
+
+#optpic{
+    height: 200px;
 }
 
 #tele{
     grid-area: tel;
 }
 
+#telpic{
+    height: 200px;
+}
+
 #location{
     grid-area: loc;
 }
 
+#locpic{
+    height: 200px;
+}
+
+.footer{
+    grid-area: ft;
+}
+
+#container3{
+    grid-template-areas: 
+    'hd'
+    'mn3'
+    'ft';
+    grid-template-rows:auto auto 30vh ;   
+    display: grid;
+
 
 }
+
+#main3{
+    grid-area: mn3;
+    grid-template-areas: 
+    'insta'
+    'pics';
+    grid-template-rows: 40vh auto;
+    display: grid;
+
+}
+
+#follow{
+    grid-area: insta;
+}
+
+#instagramlook{
+    height: 200px;
+}
+
+#picsec{
+    grid-area: pics;
+    grid-template-areas: 
+    'pic1 pic2 pic3' 
+    'pic4 pic5 pic6'
+    'pic7 pic8 pic9 '
+    'pic10 pic11 pic12';
+    grid-template-rows: 30vh 30vh 30vh 30vh;
+    grid-template-columns: 1fr 1fr 1fr;
+    display: grid;
+    grid-gap: 10px;
+}
+
+#pic1{
+    grid-area: pic1;
+    background-image: url(/img/frans1.jpg);
+    background-size: contain;
+    background-size:cover;
+}
+
+#pic2{
+    grid-area: pic2;
+    background-image: url(/img/botox2);
+    background-size: contain;
+    
+
+
+    
+}
+#pic3{
+    grid-area: pic3;
+    background-image: url(/img/frans1.jpg);
+    background-size: contain;
+    background-size:cover;
+    
+}
+#pic4{
+    grid-area: pic4;
+    background-image: url(/img/frans3.jpg);
+    background-size: contain;
+    
+    
+}
+#pic5{
+   
+    grid-area: pic5;
+     background-image: url(/img/frans2.jpg);
+     background-size: contain;
+    
+}
+#pic6{
+    grid-area: pic6;
+    background-image: url(/img/tattoo1.jpg);
+    background-size: contain;
+   
+   
+}
+#pic7{  
+    grid-area: pic7;
+  background-image: url(/img/salong.jpg);
+  background-size: contain;
+   
+}
+#pic8{
+    grid-area: pic8;
+    background-image: url(/img/tattoo1.jpg);
+    background-size: contain;
+   
+   
+}
+#pic9{
+    grid-area: pic9;
+    background-image: url(/img/nails2);
+    background-size: contain;
+    
+}
+#pic10{
+    grid-area: pic10;
+    background-image: url(/img/nails.jpg);
+    background-size: contain;
+    background-size:cover;
+    
+}
+#pic11{
+    grid-area: pic11;
+    background-image: url(/img/läppar1.jpg);
+    background-size: contain;
+   
+}
+#pic12{
+    grid-area: pic12;
+    background-image: url(/img/flaskameguld.jpg);
+    
+    
+    
+}
+
+
+
+
+}
+
