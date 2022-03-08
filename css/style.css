@@ -77,7 +77,7 @@ body{
     
 }
 
-#boka{
+.boka{
 background-color: coral;
 padding: 10px;
 border-radius: 5px;
@@ -235,14 +235,14 @@ height: 300px;
 
 #pic1{
     grid-area: pic1;
-    background-image: url(/img/frans1.jpg);
+    background-image: url(../img/frans1.jpg);
     background-size: contain;
     background-size:cover;
 }
 
 #pic2{
     grid-area: pic2;
-    background-image: url(/img/botox2);
+    background-image: url(../img/botox2);
     background-size: contain;
     
 
@@ -251,14 +251,14 @@ height: 300px;
 }
 #pic3{
     grid-area: pic3;
-    background-image: url(/img/frans1.jpg);
+    background-image: url(../img/frans1.jpg);
     background-size: contain;
     background-size:cover;
     
 }
 #pic4{
     grid-area: pic4;
-    background-image: url(/img/frans3.jpg);
+    background-image: url(../img/frans3.jpg);
     background-size: contain;
     
     
@@ -266,58 +266,144 @@ height: 300px;
 #pic5{
    
     grid-area: pic5;
-     background-image: url(/img/frans2.jpg);
+     background-image: url(../img/frans2.jpg);
      background-size: contain;
     
 }
 #pic6{
     grid-area: pic6;
-    background-image: url(/img/tattoo1.jpg);
+    background-image: url(../img/tattoo1.jpg);
     background-size: contain;
    
    
 }
 #pic7{  
     grid-area: pic7;
-  background-image: url(/img/salong.jpg);
+  background-image: url(../img/salong.jpg);
   background-size: contain;
    
 }
 #pic8{
     grid-area: pic8;
-    background-image: url(/img/tattoo1.jpg);
+    background-image: url(../img/tattoo1.jpg);
     background-size: contain;
    
    
 }
 #pic9{
     grid-area: pic9;
-    background-image: url(/img/nails2);
+    background-image: url(../img/frans2.jpg);
     background-size: contain;
     
 }
 #pic10{
     grid-area: pic10;
-    background-image: url(/img/nails.jpg);
+    background-image: url(../img/nails.jpg);
     background-size: contain;
     background-size:cover;
     
 }
 #pic11{
     grid-area: pic11;
-    background-image: url(/img/läppar1.jpg);
+    background-image: url(../img/läppar1.jpg);
     background-size: contain;
    
 }
 #pic12{
     grid-area: pic12;
-    background-image: url(/img/flaskameguld.jpg);
+    background-image: url(../img/flaskameguld.jpg);
     
     
     
 }
 
+#container4{
+    display: grid;
+    grid-template-areas: 
+    'hd'
+    'mn4'
+    'ft';
+    grid-template-rows: auto auto 30vh ;
+    
+}
 
+#main4{
+    grid-area: mn4; 
+    grid-template-areas: 
+    'teampic'
+    'teaminfo'
+    'velcom4';   
+    grid-template-rows: 50vh auto 17vh;
+    display: grid;
+    }
+    
+    #teampic4{
+        grid-area: teampic;
+        background-image: url(../img/susan-wilkinson-5QgUaMXN-7Q-unsplash.jpg);
+        background-size: contain;
+        background-size:cover;
+        justify-content: center;
+        align-items: flex-end;
+        display: flex;
+        
+    
+    }
+    
+ 
+  #teaminfo{
+        grid-area: teaminfo;
+        grid-template-areas: 
+        'tmp1 tminf1'
+        'tmp2 tminf2'
+        'tmp3 tminf3'
+        'tmp4 tminf4'
+        'tmp5 tminf5';
+        grid-template-rows: 25vh 25vh 25vh 25vh 25vh;
+        grid-template-columns: 20vw 1fr;
+        display: grid;
+    
+    }
+    
+    #team1{
+        grid-area: tmp1;
+    
+    }
+    
+    #teampic1{
+        grid-area: tminf1;
+    
+    }
+    #team2{
+        grid-area: tmp2;
+    
+    }
+    
+    #teampic2{
+        grid-area: tminf2;
+    
+    }
+
+    #team3{
+        grid-area: tmp3;
+    
+    }
+    
+    #teampic3{
+        grid-area: tminf3;
+    
+    }
+    #team4{
+        grid-area: tmp4;
+    
+    }
+    
+
+   
+    
+    
+    #velkometeam{
+        grid-area: velcom4;
+    }
 
 
 }
