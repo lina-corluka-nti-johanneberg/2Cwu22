@@ -60,14 +60,14 @@ body{
     'vel'
     'omd'
     'inf';
-    grid-template-rows: 40vh 60vh auto 40vh;  
+    grid-template-rows: 50vh 60vh auto 40vh;  
     display: grid;
 
 }
 
 #mainbild{
     grid-area: pic;
-    background-image: url(/img/blomma.jpg) ;
+    background-image: url(../img/isabella-and-zsa-fischer-nBcOnMoP18g-unsplash.jpg) ;
     background-size: cover;
     background-position-y: -500px;
     display: grid;
@@ -78,14 +78,17 @@ body{
 }
 
 .boka{
-background-color: coral;
+background-color: rgb(105, 99, 97);
 padding: 10px;
 border-radius: 5px;
 height: 10%;
 width: 11%;
 margin-bottom: 5px;
 text-align: center;
-
+color: aliceblue;
+align-items: center;
+display: flex;
+justify-content: center;
 
 }
 
@@ -187,8 +190,37 @@ height: 300px;
     height: 200px;
 }
 
-.footer{
-    grid-area: ft;
+#container2{
+    grid-template-areas: 
+    'hd'
+    'mn2'
+    'ft';
+    grid-template-rows:auto auto 30vh ;  
+    display: grid;
+}
+
+#main2{
+    grid-area: mn2;
+    grid-template-areas: 
+    'mnpic2'
+    'klick'
+    'service';
+    grid-template-rows: 50vh auto auto;
+    display: grid;
+
+}
+
+#servicebild{
+    grid-area: mnpic2;
+    background-image: url(../img/no-revisions-d2zvqp3fpro-unsplash.jpg);
+    background-size: contain;
+    background-size:cover;
+    justify-content: center;
+    align-items: flex-end;
+    display: flex;
+    
+
+    
 }
 
 #container3{
@@ -198,6 +230,7 @@ height: 300px;
     'ft';
     grid-template-rows:auto auto 30vh ;   
     display: grid;
+    grid-gap: 10px;
 
 
 }
@@ -207,17 +240,32 @@ height: 300px;
     grid-template-areas: 
     'insta'
     'pics';
-    grid-template-rows: 40vh auto;
+    grid-template-rows: 50vh auto;
+    grid-gap: 10px;
     display: grid;
 
 }
 
 #follow{
     grid-area: insta;
+    justify-content: center;
+    display: flex;   
+    align-items: center; 
+    background-image: url(../img/bady-abbas-uZoR8U2hyiw-unsplash.jpg);
+    background-size: contain;
+    background-size:cover;
+
+  
+    
+}
+
+#followinstapic{
+    justify-content: center;
+    display: flex;
 }
 
 #instagramlook{
-    height: 200px;
+    height: 100px;
 }
 
 #picsec{
@@ -337,9 +385,9 @@ height: 300px;
     display: grid;
     }
     
-    #teampic4{
+    #teampicup{
         grid-area: teampic;
-        background-image: url(../img/susan-wilkinson-5QgUaMXN-7Q-unsplash.jpg);
+        background-image: url(../img/no-revisions-RcH7lK7D7tA-unsplash.jpg);
         background-size: contain;
         background-size:cover;
         justify-content: center;
@@ -396,14 +444,27 @@ height: 300px;
         grid-area: tmp4;
     
     }
-    
 
+    #teampic4{
+        grid-area: tminf4;
+    }
    
+    #teampic5{
+        grid-area: tminf5;
     
+    }
+    #team5{
+        grid-area: tmp5;
+    
+    }
     
     #velkometeam{
         grid-area: velcom4;
     }
+
+
+
+
 
 
 }
