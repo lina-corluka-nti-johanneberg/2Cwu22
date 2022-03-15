@@ -3,6 +3,9 @@ a{
     color: black;
 }
 
+html{
+    scroll-behavior: smooth;
+}
 
 
 body{
@@ -27,7 +30,7 @@ body{
 .header{
     grid-area: hd;
     width: 100%;
-    background-color: rgb(211, 151, 164);
+    background-color: rgb(226, 172, 183);
     
 }
 
@@ -97,18 +100,32 @@ justify-content: center;
     grid-template-areas: 
     'tex aspic1';
     grid-template-columns: 1fr 1fr;
-    background-color: antiquewhite;
+    background-color: rgb(214, 213, 213);
     display: grid;
 
 }
 
 #information{
     grid-area: tex;
+    align-items: center;
+    display: flex;
+    margin: 40px;
 
+
+}
+
+#velkomrub{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
 }
 
 #loggabild{
     grid-area: aspic1;
+    align-items: center;
+    justify-content: center;
+    display: flex;
 
 }
 
@@ -210,6 +227,67 @@ height: 300px;
 
 }
 
+#klickservice{
+    grid-area: klick;
+    grid-template-areas:
+    'ek lak'
+    'nk lk'
+    'tatk stk';
+    grid-template-rows: 15vh 15vh 15vh;
+    grid-template-columns: 1fr 1fr;
+    display: grid;
+    grid-gap:10px;
+    padding: 10px;
+    
+}
+
+.klicktext{
+    justify-content: center;
+    align-items: center;
+    display: flex;    
+
+}
+
+.klickstor{
+    font-size: 6vh;
+
+}
+
+#ek{
+    grid-area: ek;
+    background-color: rgb(201, 199, 199);
+}
+
+#lak{
+    grid-area: lak;
+    background-color: rgb(201, 199, 199);
+
+}
+
+#nk{
+    grid-area: nk;
+    background-color: rgb(201, 199, 199);
+
+}
+
+#lk{
+    grid-area: lk;
+    background-color: rgb(201, 199, 199);
+
+}
+
+#tatk{
+    grid-area: tatk;
+    background-color: rgb(201, 199, 199);
+
+}
+
+#stk{
+    grid-area: stk ;
+    background-color: rgb(201, 199, 199);
+
+}
+
 #servicebild{
     grid-area: mnpic2;
     background-image: url(../img/no-revisions-d2zvqp3fpro-unsplash.jpg);
@@ -217,11 +295,346 @@ height: 300px;
     background-size:cover;
     justify-content: center;
     align-items: flex-end;
-    display: flex;
-    
-
-    
+    display: flex; 
 }
+
+.boka2{
+    background-color: rgb(105, 99, 97);
+    padding: 10px;
+    border-radius: 5px;
+    height: 10%;
+    width: 11%;
+    margin-bottom: 5px;
+    text-align: center;
+    color: aliceblue;
+    align-items: flex-end;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.box{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    position: static;
+
+}
+.bokabox{
+    position: absolute;
+    right: 10px;
+    width: fit-content;
+}
+
+#service{
+    grid-area: service;
+    grid-template-areas:
+    'brn'
+    'fr'
+    'li'
+    'nl'
+    'tt'
+    'stu';
+    grid-template-areas: auto auto auto auto auto auto;
+    grid-gap: 15px;
+    display: grid;
+
+}
+
+.rub2{
+    grid-area: ru;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+}
+#eyebrow{
+    grid-area: brn;
+    grid-template-areas: 
+    'ru ru'
+    'brn1 brn2'
+    'brn3 brn4'
+    'brn5 brn6'
+    'brn7 non';
+    grid-template-columns: 50% 1fr;
+    grid-template-rows: 20vh 15vh 15vh 15vh 15vh;
+    display: grid;
+
+}
+
+#Hennabryn{
+    grid-area: brn1;
+    position: relative;
+    left: 0;
+
+}
+#Plock-färgningavbryn{
+    grid-area: brn2;
+
+}
+#Browlamination-browLift{
+    grid-area: brn3;
+    position: relative;
+    left: 0;
+
+}
+#Microbladingtouchup{
+    grid-area: brn4;
+
+}
+#Microblading-påfyllning{
+    grid-area: brn5;
+    position: relative;
+    left: 0;
+
+}
+#Formabryn{
+    grid-area: brn6;
+
+}
+#Microblading3dögonbryn{
+    grid-area: brn7;
+    position: relative;
+    left: 0;
+
+}
+
+#nonbox{
+    grid-area: non;
+}
+
+#fransforlengning{
+    grid-area: fr ;
+    grid-template-areas:
+    'ru ru'
+    'fr1 fr2' 
+    'fr3 fr4'
+    'fr5 fr6'
+    'fr7 fr8'
+    'fr9 fr10'
+    'fr11 fr12'
+    'fr13 fr14';
+    grid-template-columns: 50% 1fr;
+    grid-template-rows: 20vh 15vh 15vh 15vh 15vh 15vh 15vh 15vh;
+    display: grid;
+
+}
+
+Effektfransar-nyttset{
+    grid-area: fr1;
+    position: relative;
+    left: 0;
+}
+Effektfransar-påfyllning{
+    grid-area: fr2;
+    position: relative;
+    right: 0;
+
+}
+Quickfix-effektfransar{
+    grid-area: fr3;
+    position: relative;
+    left: 0;
+
+}
+Quickfix-megavolym{
+    grid-area: fr4;
+    position: relative;
+    right: 0;
+
+}
+Megavolym-nyttset{
+    grid-area: fr5;
+    position: relative;
+    left: 0;
+
+}
+Megavolym-påfyllning{
+    grid-area: fr6;
+    position: relative;
+    right: 0;
+
+}
+Volymfransar-Nyttset{
+    grid-area: fr7;
+    position: relative;
+    left: 0;
+
+}
+Volymfransar-Påfyllning{
+    grid-area: fr8;
+    position: relative;
+    right: 0;
+
+}
+Mix-Nyttset{
+    grid-area: fr9;
+    position: relative;
+    left: 0;
+
+}
+Mixfransar-Påfyllning{
+    grid-area: fr10;
+    position: relative;
+    right: 0;
+
+}
+Singelfransar-Nyttset{
+    grid-area: fr11;
+    position: relative;
+    left: 0;
+
+}
+Singelfransar-Påfyllning{
+    grid-area: fr12;
+    position: relative;
+    right: 0;
+
+}
+Quickfix{
+    grid-area: fr13;
+    position: relative;
+    left: 0;
+
+}
+Borttagningavfransar{
+    grid-area: fr14;
+    position: relative;
+    right: 0;
+
+}
+
+
+
+#lashlift{
+    grid-area: li ;
+    grid-template-areas: 
+    'ru ru'
+    'li1 li2';
+    grid-template-columns: 50% 1fr;
+    grid-template-rows: 20vh 15vh ;
+    display: grid;
+
+}
+
+#Lashliftinkfärgningochkeratin{
+    grid-area: li1;
+    position: relative;
+    left: 0;
+
+}
+#Lashlift-Browlift{
+    grid-area: li2;
+    position: relative;
+    right: 0;
+
+}
+
+#nails{
+    grid-area: nl ;
+    grid-template-areas: 
+    'ru ru'
+    'nl1 nl2'
+    'nl3 nl4'
+    'nl5 nl6'
+    'nl7 non ';
+    grid-template-columns: 50% 1fr;
+    grid-template-rows: 20vh 15vh 15vh 15vh 15vh;
+    display: grid;
+
+
+}
+
+#Återbesökextremdesign{
+    grid-area: nl1;
+    position: relative;
+    left: 0;
+
+}
+#Nagelförlängning-Extremdesign{
+    grid-area: nl2;
+    position: relative;
+    right: 0;
+
+}
+#Borttagningavmaterial{
+    grid-area: nl3;
+    position: relative;
+    left: 0;
+
+}
+#FörstärkningmedGellack-Design-franska{
+    grid-area: nl4;
+    position: relative;
+    right: 0;
+
+}
+#FörstärkningmedGellack-Enkeldesign{
+    grid-area: nl5;
+    position: relative;
+    left: 0;
+
+}
+#Lagning-av-1-3-naglar{
+    grid-area: nl6;
+    position: relative;
+    right: 0;
+
+}
+#Manikyr{
+    grid-area: nl7;
+    position: relative;
+    left: 0;
+
+}
+
+
+#tattoo{
+    grid-area: tt ;
+    grid-template-areas: 
+    'ru ru'
+    'tt1 tt2';
+    grid-template-columns: 50% 1fr;
+    grid-template-rows: 20vh 15vh ;
+    display: grid;
+
+}
+
+#Tatueringmellan{
+    grid-area: tt1;
+    position: relative;
+    left: 0;
+
+}
+#Tatueringstor{
+    grid-area: tt2;
+    position: relative;
+    right: 0;
+
+}
+
+#student{
+    grid-area: stu;
+    grid-template-areas: 
+    'ru ru'
+    'stu1 stu2';
+    grid-template-columns: 50% 1fr;
+    grid-template-rows: 20vh 15vh;
+    display: grid;
+}
+
+#Nysetvolym,singel,mix{
+    grid-area: stu1;
+    position: relative;
+    left: 0;
+
+}
+#Påfyllningvolym,singelellermix{
+    grid-area: stu2;
+    position: relative;
+    right: 0;
+
+}
+
 
 #container3{
     grid-template-areas: 
@@ -231,7 +644,6 @@ height: 300px;
     grid-template-rows:auto auto 30vh ;   
     display: grid;
     grid-gap: 10px;
-
 
 }
 
@@ -254,8 +666,6 @@ height: 300px;
     background-image: url(../img/bady-abbas-uZoR8U2hyiw-unsplash.jpg);
     background-size: contain;
     background-size:cover;
-
-  
     
 }
 
