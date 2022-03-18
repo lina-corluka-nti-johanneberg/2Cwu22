@@ -24,6 +24,7 @@ body{
     'mn'
     'ft' ;
     grid-template-rows:auto auto 30vh ;
+    grid-gap: 10px;
 
 }
 
@@ -52,7 +53,22 @@ body{
 
 .footer{
     grid-area: ft;
-    background-color: darkgrey;
+    justify-content: space-evenly;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    background-color: rgb(128, 156, 119);
+    
+}
+
+.foottxt{
+    margin: 2px;
+}
+
+#insfoot{
+    height: 4vh;
+    margin: 0px;
+    
 }
 
 
@@ -63,7 +79,8 @@ body{
     'vel'
     'omd'
     'inf';
-    grid-template-rows: 50vh 60vh auto 40vh;  
+    grid-template-rows: 50vh 60vh auto auto;  
+    grid-gap: 10px;
     display: grid;
 
 }
@@ -110,6 +127,7 @@ justify-content: center;
     align-items: center;
     display: flex;
     margin: 40px;
+    
 
 
 }
@@ -141,49 +159,85 @@ height: 300px;
     'omp3 omp4';
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 10vw 15vw 15vw;
+    grid-gap: 10px;
     display: grid;
     
 
 }
+.namn{
+    margin: 10px;
+}
+
+.stars{
+    height: 4vh;
+    margin: 10px;
+}
+
+.omdtxt{
+    margin: 0;
+}
 
 #txtomdome{
     grid-area: omtx;
-    background-color: rgb(45, 99, 99);
+    background-color: rgb(245, 207, 207);
+    justify-content: center;
+    align-items: center;
+    display: flex;
 }
 
 #omp1{
     grid-area: omp1;
-    background-color: aquamarine;
+    background-color: rgb(248, 234, 234);
+    border: 5px solid black;
+    padding: 10px;
+    border-radius: 5px;
+
 }
 
 #omp2{
     grid-area: omp2;
-    background-color: black;
+    background-color: rgb(248, 234, 234);
+    border: 5px solid black;
+    padding: 10px;
+    border-radius: 5px;
+
 
 }
 
 #omp3{
     grid-area: omp3;
-    background-color: chartreuse;
+    background-color: rgb(248, 234, 234);
+    border: 5px solid black;
+    padding: 10px;
+    border-radius: 5px;
+
 }
 
 #omp4{
     grid-area: omp4;
-    background-color: cornflowerblue;
+    background-color: rgb(248, 234, 234);
+    border: 5px solid black;
+    padding: 10px;
+    border-radius: 5px;
 
 }
 
 #information2{
     grid-area: inf;
-    grid-template-areas: 
-    'tel opt loc';
+    display: flex;
     grid-template-columns: 1fr 1fr 1fr;
-    display: grid;
 }
 
 #opt{
     grid-area: opt;
-    background-color: hotpink;
+    background-color: rgb(241, 236, 236);
+    display: flex;
+    flex: 1;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 100%;
 
 }
 
@@ -191,8 +245,22 @@ height: 300px;
     height: 200px;
 }
 
+#tidlist{
+    list-style: none;
+    padding: 0;
+    text-align: left;
+}
+
 #tele{
     grid-area: tel;
+    background-color: rgb(241, 236, 236);
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 100%;
+    flex: 1;
 }
 
 #telpic{
@@ -201,6 +269,14 @@ height: 300px;
 
 #location{
     grid-area: loc;
+    background-color: rgb(241, 236, 236);
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 100%;
+    flex: 1;
 }
 
 #locpic{
@@ -213,6 +289,7 @@ height: 300px;
     'mn2'
     'ft';
     grid-template-rows:auto auto 30vh ;  
+    grid-gap: 10px;
     display: grid;
 }
 
@@ -280,6 +357,7 @@ height: 300px;
     grid-area: tatk;
     background-color: rgb(201, 199, 199);
 
+
 }
 
 #stk{
@@ -323,6 +401,13 @@ height: 300px;
     position: absolute;
     right: 10px;
     width: fit-content;
+    background-color: rgb(197, 174, 175);
+    padding: 10px;
+    border-radius: 5px;
+    height: 15px;
+    width: 35px;
+    margin-bottom: 5px;
+
 }
 
 #service{
@@ -346,6 +431,9 @@ height: 300px;
     text-align: center;
     justify-content: center;
     display: flex;
+    background-color: rgb(162, 146, 163);
+    margin-left: 40vh;
+    margin-right: 40vh;
 }
 #eyebrow{
     grid-area: brn;
@@ -357,6 +445,7 @@ height: 300px;
     'brn7 non';
     grid-template-columns: 50% 1fr;
     grid-template-rows: 20vh 15vh 15vh 15vh 15vh;
+    grid-gap: 10px;
     display: grid;
 
 }
@@ -365,41 +454,90 @@ height: 300px;
     grid-area: brn1;
     position: relative;
     left: 0;
+    background-color: lavender;
+    padding: 20px;
+    margin-left: 5vh;
+    border-radius: 15px;
+
 
 }
 #Plock-färgningavbryn{
     grid-area: brn2;
+    position: relative;
+    right: 0;
+    background-color: lavender;
+    padding: 20px;
+    margin-right: 5vh;
+    border-radius: 15px;
+
 
 }
 #Browlamination-browLift{
     grid-area: brn3;
     position: relative;
     left: 0;
+    background-color: lavender;
+    padding: 20px;
+    margin-left: 5vh;
+    border-radius: 15px;
+
 
 }
 #Microbladingtouchup{
     grid-area: brn4;
+    position: relative;
+    right: 0;
+    background-color: lavender;
+    padding: 20px;
+    margin-right: 5vh;
+    border-radius: 15px;
 
 }
 #Microblading-påfyllning{
     grid-area: brn5;
     position: relative;
     left: 0;
+    background-color: lavender;
+    padding: 20px;
+    margin-left: 5vh;
+    border-radius: 15px;
+
 
 }
 #Formabryn{
     grid-area: brn6;
+    position: relative;
+    right: 0;
+    background-color: lavender;
+    padding: 20px;
+    margin-right: 5vh;
+    border-radius: 15px;
+
+
 
 }
 #Microblading3dögonbryn{
     grid-area: brn7;
     position: relative;
     left: 0;
+    background-color: lavender;
+    padding: 20px;
+    margin-left: 5vh;
+    border-radius: 15px;
+
 
 }
 
 #nonbox{
     grid-area: non;
+    position: relative;
+    right: 0;
+    background-color: lavender;
+    padding: 20px;
+    margin-right: 5vh;
+    border-radius: 15px;
+
+
 }
 
 #fransforlengning{
@@ -415,91 +553,163 @@ height: 300px;
     'fr13 fr14';
     grid-template-columns: 50% 1fr;
     grid-template-rows: 20vh 15vh 15vh 15vh 15vh 15vh 15vh 15vh;
+    grid-gap: 10px;
     display: grid;
+
 
 }
 
-Effektfransar-nyttset{
+#Effektfransar-nyttset{
     grid-area: fr1;
     position: relative;
     left: 0;
+    background-color: lavender;
+    padding: 20px;
+    margin-left: 5vh;
+    border-radius: 15px;
 }
-Effektfransar-påfyllning{
+#Effektfransar-påfyllning{
     grid-area: fr2;
     position: relative;
     right: 0;
+    background-color: lavender;
+    padding: 20px;
+    margin-right: 5vh;
+    border-radius: 15px;
+
 
 }
-Quickfix-effektfransar{
+#Quickfix-effektfransar{
     grid-area: fr3;
     position: relative;
     left: 0;
+    background-color: lavender;
+    padding: 20px;
+    margin-left: 5vh;
+    border-radius: 15px;
+
 
 }
-Quickfix-megavolym{
+#Quickfix-megavolym{
     grid-area: fr4;
     position: relative;
     right: 0;
+    background-color: lavender;
+    padding: 20px;
+    margin-right: 5vh;
+    border-radius: 15px;
+
 
 }
-Megavolym-nyttset{
+#Megavolym-nyttset{
     grid-area: fr5;
     position: relative;
     left: 0;
+    background-color: lavender;
+    padding: 20px;
+    margin-left: 5vh;
+    border-radius: 15px;
+
 
 }
-Megavolym-påfyllning{
+#Megavolym-påfyllning{
     grid-area: fr6;
     position: relative;
     right: 0;
+    background-color: lavender;
+    padding: 20px;
+    margin-right: 5vh;
+    border-radius: 15px;
+
 
 }
-Volymfransar-Nyttset{
+#Volymfransar-Nyttset{
     grid-area: fr7;
     position: relative;
     left: 0;
+    background-color: lavender;
+    padding: 20px;
+    margin-left: 5vh;
+    border-radius: 15px;
+
 
 }
-Volymfransar-Påfyllning{
+#Volymfransar-Påfyllning{
     grid-area: fr8;
     position: relative;
     right: 0;
+    background-color: lavender;
+    padding: 20px;
+    margin-right: 5vh;
+    border-radius: 15px;
+
 
 }
-Mix-Nyttset{
+#Mix-Nyttset{
     grid-area: fr9;
     position: relative;
     left: 0;
+    background-color: lavender;
+    padding: 20px;
+    margin-left: 5vh;
+    border-radius: 15px;
+
 
 }
-Mixfransar-Påfyllning{
+#Mixfransar-Påfyllning{
     grid-area: fr10;
     position: relative;
     right: 0;
+    background-color: lavender;
+    padding: 20px;
+    margin-right: 5vh;
+    border-radius: 15px;
+
 
 }
-Singelfransar-Nyttset{
+#Singelfransar-Nyttset{
     grid-area: fr11;
     position: relative;
     left: 0;
+    background-color: lavender;
+    padding: 20px;
+    margin-left: 5vh;
+    border-radius: 15px;
+
 
 }
-Singelfransar-Påfyllning{
+#Singelfransar-Påfyllning{
     grid-area: fr12;
     position: relative;
     right: 0;
+    background-color: lavender;
+    padding: 20px;
+    margin-right: 5vh;
+    border-radius: 15px;
+
+
 
 }
-Quickfix{
+#Quickfix{
     grid-area: fr13;
     position: relative;
     left: 0;
+    background-color: lavender;
+    padding: 20px;
+    margin-left: 5vh;
+    border-radius: 15px;
+
 
 }
-Borttagningavfransar{
+#Borttagningavfransar{
     grid-area: fr14;
     position: relative;
     right: 0;
+    background-color: lavender;
+    padding: 20px;
+    margin-right: 5vh;
+    border-radius: 15px;
+
 
 }
 
@@ -512,6 +722,7 @@ Borttagningavfransar{
     'li1 li2';
     grid-template-columns: 50% 1fr;
     grid-template-rows: 20vh 15vh ;
+    grid-gap: 10px;
     display: grid;
 
 }
@@ -520,12 +731,22 @@ Borttagningavfransar{
     grid-area: li1;
     position: relative;
     left: 0;
+    background-color: lavender;
+    padding: 20px;
+    margin-left: 5vh;
+    border-radius: 15px;
+
 
 }
 #Lashlift-Browlift{
     grid-area: li2;
     position: relative;
     right: 0;
+    background-color: lavender;
+    padding: 20px;
+    margin-right: 5vh;
+    border-radius: 15px;
+
 
 }
 
@@ -539,6 +760,7 @@ Borttagningavfransar{
     'nl7 non ';
     grid-template-columns: 50% 1fr;
     grid-template-rows: 20vh 15vh 15vh 15vh 15vh;
+    grid-gap: 10px;
     display: grid;
 
 
@@ -548,42 +770,77 @@ Borttagningavfransar{
     grid-area: nl1;
     position: relative;
     left: 0;
+    background-color: lavender;
+    padding: 20px;
+    margin-left: 5vh;
+    border-radius: 15px;
+
 
 }
 #Nagelförlängning-Extremdesign{
     grid-area: nl2;
     position: relative;
     right: 0;
+    background-color: lavender;
+    padding: 20px;
+    margin-right: 5vh;
+    border-radius: 15px;
+
 
 }
 #Borttagningavmaterial{
     grid-area: nl3;
     position: relative;
     left: 0;
+    background-color: lavender;
+    padding: 20px;
+    margin-left: 5vh;
+    border-radius: 15px;
+
 
 }
 #FörstärkningmedGellack-Design-franska{
     grid-area: nl4;
     position: relative;
     right: 0;
+    background-color: lavender;
+    padding: 20px;
+    margin-right: 5vh;
+    border-radius: 15px;
+
 
 }
 #FörstärkningmedGellack-Enkeldesign{
     grid-area: nl5;
     position: relative;
     left: 0;
+    background-color: lavender;
+    padding: 20px;
+    margin-left: 5vh;
+    border-radius: 15px;
+
 
 }
 #Lagning-av-1-3-naglar{
     grid-area: nl6;
     position: relative;
     right: 0;
+    background-color: lavender;
+    padding: 20px;
+    margin-right: 5vh;
+    border-radius: 15px;
+
 
 }
 #Manikyr{
     grid-area: nl7;
     position: relative;
     left: 0;
+    background-color: lavender;
+    padding: 20px;
+    margin-left: 5vh;
+    border-radius: 15px;
+
 
 }
 
@@ -595,7 +852,9 @@ Borttagningavfransar{
     'tt1 tt2';
     grid-template-columns: 50% 1fr;
     grid-template-rows: 20vh 15vh ;
+    grid-gap: 10px;
     display: grid;
+
 
 }
 
@@ -603,12 +862,22 @@ Borttagningavfransar{
     grid-area: tt1;
     position: relative;
     left: 0;
+    background-color: lavender;
+    padding: 20px;
+    margin-left: 5vh;
+    border-radius: 15px;
+
 
 }
 #Tatueringstor{
     grid-area: tt2;
     position: relative;
     right: 0;
+    background-color: lavender;
+    padding: 20px;
+    margin-right: 5vh;
+    border-radius: 15px;
+
 
 }
 
@@ -619,19 +888,32 @@ Borttagningavfransar{
     'stu1 stu2';
     grid-template-columns: 50% 1fr;
     grid-template-rows: 20vh 15vh;
+    grid-gap: 10px;
     display: grid;
+    
+
 }
 
-#Nysetvolym,singel,mix{
+#Nysetvolym-singel-mix{
     grid-area: stu1;
     position: relative;
     left: 0;
+    background-color: lavender;
+    padding: 20px;
+    margin-left: 5vh;
+    border-radius: 15px;
+
 
 }
-#Påfyllningvolym,singelellermix{
+#Påfyllningvolymsingelellermix{
     grid-area: stu2;
     position: relative;
     right: 0;
+    background-color: lavender;
+    padding: 20px;
+    margin-right: 5vh;
+    border-radius: 5px;
+    border-radius: 15px;
 
 }
 
@@ -785,6 +1067,12 @@ Borttagningavfransar{
     
 }
 
+.person{
+    height: 50vh;
+    margin-left: 30px;
+    border-radius: 100px;
+}
+
 #main4{
     grid-area: mn4; 
     grid-template-areas: 
@@ -792,85 +1080,115 @@ Borttagningavfransar{
     'teaminfo'
     'velcom4';   
     grid-template-rows: 50vh auto 17vh;
+    grid-gap: 10px;
     display: grid;
     }
     
-    #teampicup{
-        grid-area: teampic;
-        background-image: url(../img/no-revisions-RcH7lK7D7tA-unsplash.jpg);
-        background-size: contain;
-        background-size:cover;
-        justify-content: center;
-        align-items: flex-end;
-        display: flex;
-        
-    
-    }
+#teampicup{
+    grid-area: teampic;
+    background-image: url(../img/no-revisions-RcH7lK7D7tA-unsplash.jpg);
+    background-size: contain;        background-size:cover;
+    justify-content: center;
+    align-items: flex-end;
+    display: flex;
+    border-radius: 5px;
+}
     
  
-  #teaminfo{
-        grid-area: teaminfo;
-        grid-template-areas: 
-        'tmp1 tminf1'
-        'tmp2 tminf2'
-        'tmp3 tminf3'
-        'tmp4 tminf4'
-        'tmp5 tminf5';
-        grid-template-rows: 25vh 25vh 25vh 25vh 25vh;
-        grid-template-columns: 20vw 1fr;
-        display: grid;
+#teaminfo{
+    grid-area: teaminfo;
+    grid-template-areas: 
+    'tmp1 tminf1'
+    'tmp2 tminf2'
+    'tmp3 tminf3'
+    'tmp4 tminf4'
+    'tmp5 tminf5';
+    grid-template-rows: auto auto auto auto auto;
+    grid-template-columns: 30vw 1fr;
+    grid-gap: 20px;
+    display: grid;
     
-    }
+}
     
-    #team1{
-        grid-area: tmp1;
+#teampic1{
+    grid-area: tmp1;
     
-    }
-    
-    #teampic1{
-        grid-area: tminf1;
-    
-    }
-    #team2{
-        grid-area: tmp2;
-    
-    }
-    
-    #teampic2{
-        grid-area: tminf2;
-    
-    }
+}
 
-    #team3{
-        grid-area: tmp3;
+#teamtxt1{
+    grid-area:tminf1 ;
+    background-color: rgb(228, 217, 213);
+    margin-right: 10vh;
+    border-radius: 20px;
+    padding: 20px;
+}
     
-    }
-    
-    #teampic3{
-        grid-area: tminf3;
-    
-    }
-    #team4{
-        grid-area: tmp4;
-    
-    }
 
-    #teampic4{
-        grid-area: tminf4;
-    }
-   
-    #teampic5{
-        grid-area: tminf5;
+
+#teampic2{
+    grid-area: tmp2;
     
-    }
-    #team5{
-        grid-area: tmp5;
+}
+
+#teamtxt2{
+    grid-area:tminf2;
+    background-color: rgb(228, 217, 213);
+    margin-right: 10vh;
+    border-radius: 20px;
+    padding: 20px;
+
+}
+
+
+#teampic3{
+    grid-area: tmp3;
     
-    }
+}
     
-    #velkometeam{
+#teamtxt3{
+    grid-area:tminf3;
+    background-color: rgb(228, 217, 213);
+    margin-right: 10vh;
+    border-radius: 20px;
+    padding: 20px;
+
+}
+
+
+#teampic4{
+    grid-area: tmp4;
+    
+}
+
+
+#teamtxt4{
+    grid-area: tminf4;
+    background-color: rgb(228, 217, 213);
+    margin-right: 10vh;
+    border-radius: 20px;
+    padding: 20px;
+
+}    
+    
+#teampic5{
+    grid-area: tmp5;
+    
+}
+
+
+#teamtxt5{
+    grid-area:tminf5 ;
+    background-color: rgb(228, 217, 213);
+    margin-right: 10vh;
+    border-radius: 20px;
+    padding: 20px;
+
+}
+
+    
+#velkometeam{
         grid-area: velcom4;
-    }
+}
 
 
 
@@ -879,3 +1197,7 @@ Borttagningavfransar{
 
 }
 
+
+@media screen and (max-width: 500px) {
+
+}
