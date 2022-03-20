@@ -11,11 +11,23 @@ html{
 body{
     margin: 0;
     width: 100%;
+    background-image: url(../img/susan-wilkinson-urObNSjeBCc-unsplash.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     
 }
 
 @media screen and (min-width: 501px) {
-    
+
+    .header2{
+        display: none;
+    }
+
+    .navmobile{
+        display: none;
+    }
+
 #container{
     width: 100%;
     display: grid;
@@ -25,6 +37,7 @@ body{
     'ft' ;
     grid-template-rows:auto auto 30vh ;
     grid-gap: 10px;
+    background-color: transparent;
 
 }
 
@@ -57,7 +70,7 @@ body{
     flex-direction: column;
     display: flex;
     align-items: center;
-    background-color: rgb(128, 156, 119);
+    background-color: rgb(250, 244, 248);
     
 }
 
@@ -79,17 +92,20 @@ body{
     'vel'
     'omd'
     'inf';
-    grid-template-rows: 50vh 60vh auto auto;  
+    grid-template-rows: 60vh 60vh auto auto;  
     grid-gap: 10px;
     display: grid;
+    background-color: transparent;
+    
 
 }
 
 #mainbild{
     grid-area: pic;
-    background-image: url(../img/isabella-and-zsa-fischer-nBcOnMoP18g-unsplash.jpg) ;
+    background-image: url(../img/evie-s-bPW3yhYFv2A-unsplash.jpg) ;
     background-size: cover;
-    background-position-y: -500px;
+    background-position-y: -300px;
+    background-position-x: -100px;
     display: grid;
     display: flex;
     justify-content: center;
@@ -117,7 +133,7 @@ justify-content: center;
     grid-template-areas: 
     'tex aspic1';
     grid-template-columns: 1fr 1fr;
-    background-color: rgb(214, 213, 213);
+    background-color: transparent;
     display: grid;
 
 }
@@ -179,7 +195,7 @@ height: 300px;
 
 #txtomdome{
     grid-area: omtx;
-    background-color: rgb(245, 207, 207);
+    background-color: rgba(255, 255, 255, 0.822);
     justify-content: center;
     align-items: center;
     display: flex;
@@ -188,7 +204,7 @@ height: 300px;
 #omp1{
     grid-area: omp1;
     background-color: rgb(248, 234, 234);
-    border: 5px solid black;
+    border: 5px solid rgb(170, 160, 160);
     padding: 10px;
     border-radius: 5px;
 
@@ -197,7 +213,7 @@ height: 300px;
 #omp2{
     grid-area: omp2;
     background-color: rgb(248, 234, 234);
-    border: 5px solid black;
+    border: 5px solid rgb(170, 160, 160);
     padding: 10px;
     border-radius: 5px;
 
@@ -207,7 +223,7 @@ height: 300px;
 #omp3{
     grid-area: omp3;
     background-color: rgb(248, 234, 234);
-    border: 5px solid black;
+    border: 5px solid rgb(170, 160, 160);
     padding: 10px;
     border-radius: 5px;
 
@@ -216,7 +232,7 @@ height: 300px;
 #omp4{
     grid-area: omp4;
     background-color: rgb(248, 234, 234);
-    border: 5px solid black;
+    border: 5px solid rgb(170, 160, 160);
     padding: 10px;
     border-radius: 5px;
 
@@ -230,7 +246,7 @@ height: 300px;
 
 #opt{
     grid-area: opt;
-    background-color: rgb(241, 236, 236);
+    background-color: rgba(241, 236, 236, 0.582);
     display: flex;
     flex: 1;
     align-items: center;
@@ -253,7 +269,7 @@ height: 300px;
 
 #tele{
     grid-area: tel;
-    background-color: rgb(241, 236, 236);
+    background-color: rgba(241, 236, 236, 0.582);
     display: flex;
     align-items: center;
     text-align: center;
@@ -269,7 +285,7 @@ height: 300px;
 
 #location{
     grid-area: loc;
-    background-color: rgb(241, 236, 236);
+    background-color: rgba(241, 236, 236, 0.582);
     display: flex;
     align-items: center;
     text-align: center;
@@ -332,43 +348,45 @@ height: 300px;
 
 #ek{
     grid-area: ek;
-    background-color: rgb(201, 199, 199);
+    background-color: rgba(248, 227, 232, 0.699);
 }
 
 #lak{
     grid-area: lak;
-    background-color: rgb(201, 199, 199);
+    background-color: rgba(248, 227, 232, 0.699);
 
 }
 
 #nk{
     grid-area: nk;
-    background-color: rgb(201, 199, 199);
+    background-color: rgba(248, 227, 232, 0.699);
 
 }
 
 #lk{
     grid-area: lk;
-    background-color: rgb(201, 199, 199);
+    background-color: rgba(248, 227, 232, 0.699);
 
 }
 
 #tatk{
     grid-area: tatk;
-    background-color: rgb(201, 199, 199);
+    background-color: rgba(248, 227, 232, 0.699);
 
 
 }
 
 #stk{
     grid-area: stk ;
-    background-color: rgb(201, 199, 199);
+    background-color: rgba(248, 227, 232, 0.699);
 
 }
 
 #servicebild{
     grid-area: mnpic2;
-    background-image: url(../img/no-revisions-d2zvqp3fpro-unsplash.jpg);
+    background-image: url(../img/nr2.jpg);
+    background-position-y: -300px;
+    background-position-x: -100px;
     background-size: contain;
     background-size:cover;
     justify-content: center;
@@ -431,9 +449,10 @@ height: 300px;
     text-align: center;
     justify-content: center;
     display: flex;
-    background-color: rgb(162, 146, 163);
-    margin-left: 40vh;
-    margin-right: 40vh;
+    background-color: rgba(247, 206, 216, 0.699);
+    border-radius: 70px;
+    margin-left: 90vh;
+    margin-right: 90vh;
 }
 #eyebrow{
     grid-area: brn;
@@ -454,7 +473,7 @@ height: 300px;
     grid-area: brn1;
     position: relative;
     left: 0;
-    background-color: lavender;
+    background-color: rgb(242, 241, 243);
     padding: 20px;
     margin-left: 5vh;
     border-radius: 15px;
@@ -465,7 +484,7 @@ height: 300px;
     grid-area: brn2;
     position: relative;
     right: 0;
-    background-color: lavender;
+    background-color: rgb(242, 241, 243);
     padding: 20px;
     margin-right: 5vh;
     border-radius: 15px;
@@ -476,7 +495,7 @@ height: 300px;
     grid-area: brn3;
     position: relative;
     left: 0;
-    background-color: lavender;
+    background-color: rgb(242, 241, 243);
     padding: 20px;
     margin-left: 5vh;
     border-radius: 15px;
@@ -487,7 +506,7 @@ height: 300px;
     grid-area: brn4;
     position: relative;
     right: 0;
-    background-color: lavender;
+    background-color: rgb(242, 241, 243);
     padding: 20px;
     margin-right: 5vh;
     border-radius: 15px;
@@ -497,7 +516,7 @@ height: 300px;
     grid-area: brn5;
     position: relative;
     left: 0;
-    background-color: lavender;
+    background-color: rgb(242, 241, 243);
     padding: 20px;
     margin-left: 5vh;
     border-radius: 15px;
@@ -508,7 +527,7 @@ height: 300px;
     grid-area: brn6;
     position: relative;
     right: 0;
-    background-color: lavender;
+    background-color: rgb(242, 241, 243);
     padding: 20px;
     margin-right: 5vh;
     border-radius: 15px;
@@ -520,7 +539,7 @@ height: 300px;
     grid-area: brn7;
     position: relative;
     left: 0;
-    background-color: lavender;
+    background-color: rgb(242, 241, 243);
     padding: 20px;
     margin-left: 5vh;
     border-radius: 15px;
@@ -532,7 +551,7 @@ height: 300px;
     grid-area: non;
     position: relative;
     right: 0;
-    background-color: lavender;
+    background-color: rgb(242, 241, 243);
     padding: 20px;
     margin-right: 5vh;
     border-radius: 15px;
@@ -563,7 +582,7 @@ height: 300px;
     grid-area: fr1;
     position: relative;
     left: 0;
-    background-color: lavender;
+     background-color: rgb(242, 241, 243);
     padding: 20px;
     margin-left: 5vh;
     border-radius: 15px;
@@ -572,7 +591,7 @@ height: 300px;
     grid-area: fr2;
     position: relative;
     right: 0;
-    background-color: lavender;
+     background-color: rgb(242, 241, 243);
     padding: 20px;
     margin-right: 5vh;
     border-radius: 15px;
@@ -583,7 +602,7 @@ height: 300px;
     grid-area: fr3;
     position: relative;
     left: 0;
-    background-color: lavender;
+     background-color: rgb(242, 241, 243);
     padding: 20px;
     margin-left: 5vh;
     border-radius: 15px;
@@ -594,7 +613,7 @@ height: 300px;
     grid-area: fr4;
     position: relative;
     right: 0;
-    background-color: lavender;
+     background-color: rgb(242, 241, 243);
     padding: 20px;
     margin-right: 5vh;
     border-radius: 15px;
@@ -605,7 +624,7 @@ height: 300px;
     grid-area: fr5;
     position: relative;
     left: 0;
-    background-color: lavender;
+     background-color: rgb(242, 241, 243);
     padding: 20px;
     margin-left: 5vh;
     border-radius: 15px;
@@ -616,7 +635,7 @@ height: 300px;
     grid-area: fr6;
     position: relative;
     right: 0;
-    background-color: lavender;
+     background-color: rgb(242, 241, 243);
     padding: 20px;
     margin-right: 5vh;
     border-radius: 15px;
@@ -627,7 +646,7 @@ height: 300px;
     grid-area: fr7;
     position: relative;
     left: 0;
-    background-color: lavender;
+     background-color: rgb(242, 241, 243);
     padding: 20px;
     margin-left: 5vh;
     border-radius: 15px;
@@ -638,7 +657,7 @@ height: 300px;
     grid-area: fr8;
     position: relative;
     right: 0;
-    background-color: lavender;
+     background-color: rgb(242, 241, 243);
     padding: 20px;
     margin-right: 5vh;
     border-radius: 15px;
@@ -649,7 +668,7 @@ height: 300px;
     grid-area: fr9;
     position: relative;
     left: 0;
-    background-color: lavender;
+     background-color: rgb(242, 241, 243);
     padding: 20px;
     margin-left: 5vh;
     border-radius: 15px;
@@ -660,7 +679,7 @@ height: 300px;
     grid-area: fr10;
     position: relative;
     right: 0;
-    background-color: lavender;
+     background-color: rgb(242, 241, 243);
     padding: 20px;
     margin-right: 5vh;
     border-radius: 15px;
@@ -671,7 +690,7 @@ height: 300px;
     grid-area: fr11;
     position: relative;
     left: 0;
-    background-color: lavender;
+     background-color: rgb(242, 241, 243);
     padding: 20px;
     margin-left: 5vh;
     border-radius: 15px;
@@ -682,7 +701,7 @@ height: 300px;
     grid-area: fr12;
     position: relative;
     right: 0;
-    background-color: lavender;
+     background-color: rgb(242, 241, 243);
     padding: 20px;
     margin-right: 5vh;
     border-radius: 15px;
@@ -694,7 +713,7 @@ height: 300px;
     grid-area: fr13;
     position: relative;
     left: 0;
-    background-color: lavender;
+     background-color: rgb(242, 241, 243);
     padding: 20px;
     margin-left: 5vh;
     border-radius: 15px;
@@ -705,7 +724,7 @@ height: 300px;
     grid-area: fr14;
     position: relative;
     right: 0;
-    background-color: lavender;
+     background-color: rgb(242, 241, 243);
     padding: 20px;
     margin-right: 5vh;
     border-radius: 15px;
@@ -731,7 +750,7 @@ height: 300px;
     grid-area: li1;
     position: relative;
     left: 0;
-    background-color: lavender;
+     background-color: rgb(242, 241, 243);
     padding: 20px;
     margin-left: 5vh;
     border-radius: 15px;
@@ -742,7 +761,7 @@ height: 300px;
     grid-area: li2;
     position: relative;
     right: 0;
-    background-color: lavender;
+     background-color: rgb(242, 241, 243);
     padding: 20px;
     margin-right: 5vh;
     border-radius: 15px;
@@ -770,7 +789,7 @@ height: 300px;
     grid-area: nl1;
     position: relative;
     left: 0;
-    background-color: lavender;
+     background-color: rgb(242, 241, 243);
     padding: 20px;
     margin-left: 5vh;
     border-radius: 15px;
@@ -781,7 +800,7 @@ height: 300px;
     grid-area: nl2;
     position: relative;
     right: 0;
-    background-color: lavender;
+     background-color: rgb(242, 241, 243);
     padding: 20px;
     margin-right: 5vh;
     border-radius: 15px;
@@ -792,7 +811,7 @@ height: 300px;
     grid-area: nl3;
     position: relative;
     left: 0;
-    background-color: lavender;
+     background-color: rgb(242, 241, 243);
     padding: 20px;
     margin-left: 5vh;
     border-radius: 15px;
@@ -803,7 +822,7 @@ height: 300px;
     grid-area: nl4;
     position: relative;
     right: 0;
-    background-color: lavender;
+     background-color: rgb(242, 241, 243);
     padding: 20px;
     margin-right: 5vh;
     border-radius: 15px;
@@ -814,7 +833,7 @@ height: 300px;
     grid-area: nl5;
     position: relative;
     left: 0;
-    background-color: lavender;
+     background-color: rgb(242, 241, 243);
     padding: 20px;
     margin-left: 5vh;
     border-radius: 15px;
@@ -825,7 +844,7 @@ height: 300px;
     grid-area: nl6;
     position: relative;
     right: 0;
-    background-color: lavender;
+     background-color: rgb(242, 241, 243);
     padding: 20px;
     margin-right: 5vh;
     border-radius: 15px;
@@ -836,7 +855,7 @@ height: 300px;
     grid-area: nl7;
     position: relative;
     left: 0;
-    background-color: lavender;
+     background-color: rgb(242, 241, 243);
     padding: 20px;
     margin-left: 5vh;
     border-radius: 15px;
@@ -862,7 +881,7 @@ height: 300px;
     grid-area: tt1;
     position: relative;
     left: 0;
-    background-color: lavender;
+     background-color: rgb(242, 241, 243);
     padding: 20px;
     margin-left: 5vh;
     border-radius: 15px;
@@ -873,7 +892,7 @@ height: 300px;
     grid-area: tt2;
     position: relative;
     right: 0;
-    background-color: lavender;
+     background-color: rgb(242, 241, 243);
     padding: 20px;
     margin-right: 5vh;
     border-radius: 15px;
@@ -898,7 +917,7 @@ height: 300px;
     grid-area: stu1;
     position: relative;
     left: 0;
-    background-color: lavender;
+     background-color: rgb(242, 241, 243);
     padding: 20px;
     margin-left: 5vh;
     border-radius: 15px;
@@ -909,7 +928,7 @@ height: 300px;
     grid-area: stu2;
     position: relative;
     right: 0;
-    background-color: lavender;
+     background-color: rgb(242, 241, 243);
     padding: 20px;
     margin-right: 5vh;
     border-radius: 5px;
@@ -945,7 +964,9 @@ height: 300px;
     justify-content: center;
     display: flex;   
     align-items: center; 
-    background-image: url(../img/bady-abbas-uZoR8U2hyiw-unsplash.jpg);
+    background-image: url(../img/nr5.jpg);
+    background-position-y: -300px;
+    background-position-x: -100px;
     background-size: contain;
     background-size:cover;
     
@@ -970,89 +991,95 @@ height: 300px;
     grid-template-rows: 30vh 30vh 30vh 30vh;
     grid-template-columns: 1fr 1fr 1fr;
     display: grid;
-    grid-gap: 10px;
+    grid-gap: 30px;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
 #pic1{
     grid-area: pic1;
     background-image: url(../img/frans1.jpg);
-    background-size: contain;
     background-size:cover;
+    background-position-y: -50px ;
 }
 
 #pic2{
     grid-area: pic2;
-    background-image: url(../img/botox2);
-    background-size: contain;
-    
-
+    background-image: url(../img/botoxputtin.jpg);
+    background-size: cover;
 
     
 }
 #pic3{
     grid-area: pic3;
-    background-image: url(../img/frans1.jpg);
-    background-size: contain;
+    background-image: url(../img/nailmaking.jpg);
     background-size:cover;
+    background-position-y:-40px ;
     
 }
 #pic4{
     grid-area: pic4;
     background-image: url(../img/frans3.jpg);
-    background-size: contain;
-    
+    background-size: cover;
+    background-position-y: -40px ;
     
 }
 #pic5{
    
     grid-area: pic5;
-     background-image: url(../img/frans2.jpg);
-     background-size: contain;
+    background-image: url(../img/lashputting.jpg);
+    background-size: cover;
+    background-position-y: -30px;
     
 }
 #pic6{
     grid-area: pic6;
-    background-image: url(../img/tattoo1.jpg);
-    background-size: contain;
-   
-   
+ 
+    background-image: url(../img/frans2.jpg);
+      background-size: cover;
+    background-position-y:-50px ;
 }
 #pic7{  
     grid-area: pic7;
-  background-image: url(../img/salong.jpg);
-  background-size: contain;
+  background-image: url(https://images.cdn.yle.fi/image/upload/f_auto,fl_progressive/fl_keep_iptc/q_88/w_1920,h_1080,c_crop,x_0,y_81/w_700/v1573212809/39-6098005dc552264eec4.jpg);
+  background-size: cover;
+  background-position-y: -20px;
    
 }
 #pic8{
     grid-area: pic8;
     background-image: url(../img/tattoo1.jpg);
-    background-size: contain;
+    background-size: cover;
+    background-position-y: -30px;
    
    
 }
 #pic9{
     grid-area: pic9;
-    background-image: url(../img/frans2.jpg);
-    background-size: contain;
+    background-image: url(../img/eyebrowsbetter);
+    background-size: cover;
+    background-position-y:-40px ;
     
 }
 #pic10{
     grid-area: pic10;
-    background-image: url(../img/nails.jpg);
-    background-size: contain;
+    background-image: url(../img/nailsfix.jpg);
     background-size:cover;
+    background-position-y: -20px;
     
 }
 #pic11{
     grid-area: pic11;
-    background-image: url(../img/läppar1.jpg);
-    background-size: contain;
+    background-image: url(../img/facial.png);
+    background-size: cover;
+    background-position-y:-60px ;
    
 }
 #pic12{
     grid-area: pic12;
-    background-image: url(../img/flaskameguld.jpg);
-    
+    background-image: url(../img/tattoingpers.jpg);
+    background-size: cover;
+    background-position-y: -70px;
     
     
 }
@@ -1086,8 +1113,11 @@ height: 300px;
     
 #teampicup{
     grid-area: teampic;
-    background-image: url(../img/no-revisions-RcH7lK7D7tA-unsplash.jpg);
-    background-size: contain;        background-size:cover;
+    background-image: url(../img/nr4.jpg);
+    background-size: contain;        
+    background-size:cover;
+    background-position-y: -300px;
+    background-position-x: -100px;
     justify-content: center;
     align-items: flex-end;
     display: flex;
@@ -1186,8 +1216,13 @@ height: 300px;
 }
 
     
-#velkometeam{
+#velkomteam{
         grid-area: velcom4;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        font-size: 40px;
+        
 }
 
 
@@ -1199,5 +1234,6 @@ height: 300px;
 
 
 @media screen and (max-width: 500px) {
+    
 
 }
