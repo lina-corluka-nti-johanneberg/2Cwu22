@@ -44,7 +44,7 @@ body{
 .header{
     grid-area: hd;
     width: 100%;
-    background-color: rgb(226, 172, 183);
+    background-color: rgb(233, 213, 226);
     
 }
 
@@ -57,7 +57,8 @@ body{
 
 .menuitem{
     font-size: 20px;
-    color: ghostwhite;
+    color: rgb(0, 0, 0);
+    font-family: 'Abel', sans-serif;
 }
 
 .logo{
@@ -76,6 +77,8 @@ body{
 
 .foottxt{
     margin: 2px;
+    font-family: 'Abel', sans-serif;
+    
 }
 
 #insfoot{
@@ -125,6 +128,8 @@ color: aliceblue;
 align-items: center;
 display: flex;
 justify-content: center;
+font-family: 'Abel', sans-serif;
+font-size: 20px;
 
 }
 
@@ -152,7 +157,15 @@ justify-content: center;
     align-items: center;
     display: flex;
     justify-content: center;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
+    font-family: 'Abel', sans-serif;
+}
+
+#praise{
+    font-family: 'Abel', sans-serif;
+    margin-right: 40px;
+    margin-left: 40px;
+
 }
 
 #loggabild{
@@ -182,6 +195,7 @@ height: 300px;
 }
 .namn{
     margin: 10px;
+    font-family: 'Abel', sans-serif;
 }
 
 .stars{
@@ -189,8 +203,14 @@ height: 300px;
     margin: 10px;
 }
 
+#kcomdrub{
+    font-family: 'Abel', sans-serif;
+    font-size: 40px;
+}
+
 .omdtxt{
     margin: 0;
+    font-family: 'Abel', sans-serif;
 }
 
 #txtomdome{
@@ -242,6 +262,17 @@ height: 300px;
     grid-area: inf;
     display: flex;
     grid-template-columns: 1fr 1fr 1fr;
+}
+
+.inforub{
+   font-family: 'Montserrat Alternates', sans-serif;
+   font-size: 20px;
+   margin: 0;
+}
+
+.infotri{
+    font-family: 'Abel', sans-serif;
+
 }
 
 #opt{
@@ -343,6 +374,7 @@ height: 300px;
 
 .klickstor{
     font-size: 6vh;
+    font-family: 'Abel', sans-serif;
 
 }
 
@@ -413,6 +445,7 @@ height: 300px;
     flex-direction: column;
     justify-content: space-around;
     position: static;
+    font-family: 'Abel', sans-serif;
 
 }
 .bokabox{
@@ -426,6 +459,11 @@ height: 300px;
     width: 35px;
     margin-bottom: 5px;
 
+}
+
+.servrub{
+    font-family: 'Abel', sans-serif;
+    font-size: 35px;
 }
 
 #service{
@@ -451,8 +489,8 @@ height: 300px;
     display: flex;
     background-color: rgba(247, 206, 216, 0.699);
     border-radius: 70px;
-    margin-left: 90vh;
-    margin-right: 90vh;
+    margin-left: 85vh;
+    margin-right: 85vh;
 }
 #eyebrow{
     grid-area: brn;
@@ -977,6 +1015,11 @@ height: 300px;
     display: flex;
 }
 
+#insfollow{
+    font-family: 'Parisienne', cursive;
+
+}
+
 #instagramlook{
     height: 100px;
 }
@@ -1056,7 +1099,7 @@ height: 300px;
 }
 #pic9{
     grid-area: pic9;
-    background-image: url(../img/eyebrowsbetter);
+    background-image: url(../img/eyebrowurus.png);
     background-size: cover;
     background-position-y:-40px ;
     
@@ -1138,6 +1181,21 @@ height: 300px;
     grid-gap: 20px;
     display: grid;
     
+}
+
+.persname{
+    font-size: 25px;
+    font-family: 'Abel', sans-serif;
+}
+
+.perssloga{
+    font-size: 15px;
+    font-family: 'Abel', sans-serif;
+}
+
+.perstxt{
+    font-size: 20px;
+    font-family: 'Abel', sans-serif;
 }
     
 #teampic1{
@@ -1226,7 +1284,11 @@ height: 300px;
 }
 
 
-
+#vel1{
+   font-size: 50px;
+   font-family: 'Abel', sans-serif;
+   font-family: 'Parisienne', cursive;
+}
 
 
 
@@ -1234,6 +1296,1326 @@ height: 300px;
 
 
 @media screen and (max-width: 500px) {
+    .header{
+        display: none;
+    }
+
+    .header2{
+        grid-area: hd;
+        width: 100%;
+        background-color: rgb(233, 213, 226);
+
+    }
+
+    #container{
+        width: 100%;
+        display: grid;
+        grid-template-areas:
+        'hd'
+        'mn'
+        'ft' ;
+        grid-template-rows:auto auto 30vh ;
+        grid-gap: 10px;
+        background-color: transparent;
+    
+    }
+    
+    .header{
+        grid-area: hd;
+        width: 100%;
+        background-color: rgb(233, 213, 226);
+        
+    }
+    
+    .navdesktop{
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    
+    .menuitem{
+        font-size: 20px;
+        color: rgb(0, 0, 0);
+        font-family: 'Abel', sans-serif;
+    }
+    
+    .logo{
+        height: 20vh;
+    }
+    
+    .footer{
+        grid-area: ft;
+        justify-content: space-evenly;
+        flex-direction: column;
+        display: flex;
+        align-items: center;
+        background-color: rgb(250, 244, 248);
+        
+    }
+    
+    .foottxt{
+        margin: 2px;
+        font-family: 'Abel', sans-serif;
+        
+    }
+    
+    #insfoot{
+        height: 4vh;
+        margin: 0px;
+        
+    }
+    
+    
+    #main1{
+        grid-area: mn;
+        grid-template-areas: 
+        'pic'
+        'vel'
+        'omd'
+        'inf';
+        grid-template-rows: 50vh auto auto auto;  
+        grid-gap: 10px;
+        display: grid;
+        background-color: transparent;
+        
+    
+    }
+    
+    #mainbild{
+        grid-area: pic;
+        background-image: url(../img/evie-s-bPW3yhYFv2A-unsplash.jpg) ;
+        background-size: cover;
+        background-position-y: -500px;
+        background-position-x: -100px;
+        display: grid;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        
+    }
+    
+    .boka{
+    background-color: rgb(105, 99, 97);
+    padding: 10px;
+    border-radius: 5px;
+    height: 20%;
+    width: 15%;
+    margin-bottom: 5px;
+    text-align: center;
+    color: aliceblue;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    font-family: 'Abel', sans-serif;
+    font-size: 30px;
+    
+    }
+    
+    #velkomsinfo{
+        grid-area: vel;
+        grid-template-areas:       
+        'aspic1'
+        'tex' ;
+        grid-template-rows: 1fr 1fr;
+        background-color: transparent;
+        display: grid;
+    
+    }
+    
+    #information{
+        grid-area: tex;
+        align-items: center;
+        display: flex;    
+    
+    }
+    
+    #velkomrub{
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 30px;
+        font-family: 'Abel', sans-serif;
+    }
+    
+    #praise{
+        font-family: 'Abel', sans-serif;
+        margin-right: 40px;
+        margin-left: 40px;
+    
+    }
+    
+    #loggabild{
+        grid-area: aspic1;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+    
+    }
+    
+    #logotyp1{
+    height: 300px;
+    }
+    
+    #omdome{
+        grid-area: omd;
+        grid-template-areas: 
+        'omtx' 
+        'omp1' 
+        'omp2'
+        'omp3' 
+        'omp4';
+        grid-template-rows: 20vw auto auto auto auto;
+        grid-gap: 10px;
+        display: grid;
+        
+    
+    }
+    .namn{
+        margin: 10px;
+        font-family: 'Abel', sans-serif;
+    }
+    
+    .stars{
+        height: 4vh;
+        margin: 10px;
+    }
+    
+    #kcomdrub{
+        font-family: 'Abel', sans-serif;
+        font-size: 20px;
+    }
+    
+    .omdtxt{
+        margin: 0;
+        font-family: 'Abel', sans-serif;
+    }
+    
+    #txtomdome{
+        grid-area: omtx;
+        background-color: rgba(255, 255, 255, 0.822);
+        justify-content: center;
+        align-items: center;
+        display: flex;
+    }
+    
+    #omp1{
+        grid-area: omp1;
+        background-color: rgb(248, 234, 234);
+        border: 5px solid rgb(170, 160, 160);
+        padding: 10px;
+        border-radius: 5px;
+    
+    }
+    
+    #omp2{
+        grid-area: omp2;
+        background-color: rgb(248, 234, 234);
+        border: 5px solid rgb(170, 160, 160);
+        padding: 10px;
+        border-radius: 5px;
+    
+    
+    }
+    
+    #omp3{
+        grid-area: omp3;
+        background-color: rgb(248, 234, 234);
+        border: 5px solid rgb(170, 160, 160);
+        padding: 10px;
+        border-radius: 5px;
+    
+    }
+    
+    #omp4{
+        grid-area: omp4;
+        background-color: rgb(248, 234, 234);
+        border: 5px solid rgb(170, 160, 160);
+        padding: 10px;
+        border-radius: 5px;
+    
+    }
+    
+    #information2{
+        grid-area: inf;
+        grid-template-areas: 
+        'opt'
+        'tel'
+        'loc';
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+    
+    .inforub{
+       font-family: 'Montserrat Alternates', sans-serif;
+       font-size: 20px;
+       margin: 0;
+    }
+    
+    .infotri{
+        font-family: 'Abel', sans-serif;
+    
+    }
+    
+    #opt{
+        grid-area: opt;
+        background-color: rgba(241, 236, 236, 0.582);
+        display: flex;
+        flex: 1;
+        align-items: center;
+        text-align: center;
+        flex-direction: column;
+        justify-content: flex-start;
+        height: 100%;
+    
+    }
+    
+    #optpic{
+        height: 200px;
+    }
+    
+    #tidlist{
+        list-style: none;
+        padding: 0;
+        text-align: left;
+    }
+    
+    #tele{
+        grid-area: tel;
+        background-color: rgba(241, 236, 236, 0.582);
+        display: flex;
+        align-items: center;
+        text-align: center;
+        flex-direction: column;
+        justify-content: flex-start;
+        height: 100%;
+        flex: 1;
+    }
+    
+    #telpic{
+        height: 200px;
+    }
+    
+    #location{
+        grid-area: loc;
+        background-color: rgba(241, 236, 236, 0.582);
+        display: flex;
+        align-items: center;
+        text-align: center;
+        flex-direction: column;
+        justify-content: flex-start;
+        height: 100%;
+        flex: 1;
+    }
+    
+    #locpic{
+        height: 200px;
+    }
+    
+    #container2{
+        grid-template-areas: 
+        'hd'
+        'mn2'
+        'ft';
+        grid-template-rows:auto auto 30vh ;  
+        grid-gap: 10px;
+        display: grid;
+    }
+    
+    #main2{
+        grid-area: mn2;
+        grid-template-areas: 
+        'mnpic2'
+        'klick'
+        'service';
+        grid-template-rows: 50vh auto auto;
+        display: grid;
+    
+    }
+    
+    #klickservice{
+        grid-area: klick;
+        grid-template-areas:
+        'ek'
+        'lak'
+        'nk' 
+        'lk'
+        'tatk' 
+        'stk';
+        grid-template-rows: 15vh 15vh 15vh 15vh 15vh 15vh;
+        display: grid;
+        grid-gap:10px;
+        
+    }
+    
+    .klicktext{
+        justify-content: center;
+        align-items: center;
+        display: flex;    
+    
+    }
+    
+    .klickstor{
+        font-size: 6vh;
+        font-family: 'Abel', sans-serif;
+    
+    }
+    
+    #ek{
+        grid-area: ek;
+        background-color: rgba(248, 227, 232, 0.699);
+    }
+    
+    #lak{
+        grid-area: lak;
+        background-color: rgba(248, 227, 232, 0.699);
+    
+    }
+    
+    #nk{
+        grid-area: nk;
+        background-color: rgba(248, 227, 232, 0.699);
+    
+    }
+    
+    #lk{
+        grid-area: lk;
+        background-color: rgba(248, 227, 232, 0.699);
+    
+    }
+    
+    #tatk{
+        grid-area: tatk;
+        background-color: rgba(248, 227, 232, 0.699);
+    
+    
+    }
+    
+    #stk{
+        grid-area: stk ;
+        background-color: rgba(248, 227, 232, 0.699);
+    
+    }
+    
+    #servicebild{
+        grid-area: mnpic2;
+        background-image: url(../img/nr2.jpg);
+        background-position-y: -300px;
+        background-position-x: -100px;
+        background-size: contain;
+        background-size:cover;
+        justify-content: center;
+        align-items: flex-end;
+        display: flex; 
+    }
+    
+    .boka2{
+        background-color: rgb(105, 99, 97);
+        padding: 10px;
+        border-radius: 5px;
+        height: 10%;
+        width: 11%;
+        margin-bottom: 5px;
+        text-align: center;
+        color: aliceblue;
+        align-items: flex-end;
+        display: flex;
+        justify-content: flex-end;
+    }
+    
+    .box{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        position: static;
+        font-family: 'Abel', sans-serif;
+    
+    }
+    .bokabox{
+        position: absolute;
+        right: 10px;
+        width: fit-content;
+        background-color: rgb(197, 174, 175);
+        padding: 10px;
+        border-radius: 5px;
+        height: 15px;
+        width: 35px;
+        margin-bottom: 5px;
+    
+    }
+    
+    .servrub{
+        font-family: 'Abel', sans-serif;
+        font-size: 35px;
+    }
+    
+    #service{
+        grid-area: service;
+        grid-template-areas:
+        'brn'
+        'fr'
+        'li'
+        'nl'
+        'tt'
+        'stu';
+        grid-template-areas: auto auto auto auto auto auto;
+        grid-gap: 15px;
+        display: grid;
+    
+    }
+    
+    .rub2{
+        grid-area: ru;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        display: flex;
+        background-color: rgba(247, 206, 216, 0.699);
+        border-radius: 70px;
+        margin-left: 85vh;
+        margin-right: 85vh;
+    }
+    #eyebrow{
+        grid-area: brn;
+        grid-template-areas: 
+        'ru'
+        'brn1' 
+        'brn2'
+        'brn3' 
+        'brn4'
+        'brn5' 
+        'brn6'
+        'brn7' 
+        'non';
+        grid-template-rows: 30vh 30vh 30vh 30vh 30vh 30vh 30vh 30vh 30vh;
+        grid-gap: 10px;
+        display: grid;
+    
+    }
+    
+    #Hennabryn{
+        grid-area: brn1;
+        position: relative;
+        left: 0;
+        background-color: rgb(242, 241, 243);
+        padding: 20px;
+        margin-left: 5vh;
+        border-radius: 15px;
+    
+    
+    }
+    #Plock-färgningavbryn{
+        grid-area: brn2;
+        position: relative;
+        right: 0;
+        background-color: rgb(242, 241, 243);
+        padding: 20px;
+        margin-right: 5vh;
+        border-radius: 15px;
+    
+    
+    }
+    #Browlamination-browLift{
+        grid-area: brn3;
+        position: relative;
+        left: 0;
+        background-color: rgb(242, 241, 243);
+        padding: 20px;
+        margin-left: 5vh;
+        border-radius: 15px;
+    
+    
+    }
+    #Microbladingtouchup{
+        grid-area: brn4;
+        position: relative;
+        right: 0;
+        background-color: rgb(242, 241, 243);
+        padding: 20px;
+        margin-right: 5vh;
+        border-radius: 15px;
+    
+    }
+    #Microblading-påfyllning{
+        grid-area: brn5;
+        position: relative;
+        left: 0;
+        background-color: rgb(242, 241, 243);
+        padding: 20px;
+        margin-left: 5vh;
+        border-radius: 15px;
+    
+    
+    }
+    #Formabryn{
+        grid-area: brn6;
+        position: relative;
+        right: 0;
+        background-color: rgb(242, 241, 243);
+        padding: 20px;
+        margin-right: 5vh;
+        border-radius: 15px;
+    
+    
+    
+    }
+    #Microblading3dögonbryn{
+        grid-area: brn7;
+        position: relative;
+        left: 0;
+        background-color: rgb(242, 241, 243);
+        padding: 20px;
+        margin-left: 5vh;
+        border-radius: 15px;
+    
+    
+    }
+    
+    #nonbox{
+        grid-area: non;
+        position: relative;
+        right: 0;
+        background-color: rgb(242, 241, 243);
+        padding: 20px;
+        margin-right: 5vh;
+        border-radius: 15px;
+    
+    
+    }
+    
+    #fransforlengning{
+        grid-area: fr ;
+        grid-template-areas:
+        'ru'
+        'fr1' 
+        'fr2' 
+        'fr3' 
+        'fr4'
+        'fr5' 
+        'fr6'
+        'fr7' 
+        'fr8'
+        'fr9' 
+        'fr10'
+        'fr11' 
+        'fr12'
+        'fr13' 
+        'fr14';
+
+        grid-template-rows: 20vh 30vh 30vh 30vh 30vh 30vh 30vh 30vh 30vh 30vh 30vh 30vh 30vh 30vh 30vh;
+        grid-gap: 10px;
+        display: grid;
+    
+    
+    }
+    
+    #Effektfransar-nyttset{
+        grid-area: fr1;
+        position: relative;
+        left: 0;
+         background-color: rgb(242, 241, 243);
+        padding: 20px;
+        margin-left: 5vh;
+        border-radius: 15px;
+    }
+    #Effektfransar-påfyllning{
+        grid-area: fr2;
+        position: relative;
+        right: 0;
+         background-color: rgb(242, 241, 243);
+        padding: 20px;
+        margin-right: 5vh;
+        border-radius: 15px;
+    
+    
+    }
+    #Quickfix-effektfransar{
+        grid-area: fr3;
+        position: relative;
+        left: 0;
+         background-color: rgb(242, 241, 243);
+        padding: 20px;
+        margin-left: 5vh;
+        border-radius: 15px;
+    
+    
+    }
+    #Quickfix-megavolym{
+        grid-area: fr4;
+        position: relative;
+        right: 0;
+         background-color: rgb(242, 241, 243);
+        padding: 20px;
+        margin-right: 5vh;
+        border-radius: 15px;
+    
+    
+    }
+    #Megavolym-nyttset{
+        grid-area: fr5;
+        position: relative;
+        left: 0;
+         background-color: rgb(242, 241, 243);
+        padding: 20px;
+        margin-left: 5vh;
+        border-radius: 15px;
+    
+    
+    }
+    #Megavolym-påfyllning{
+        grid-area: fr6;
+        position: relative;
+        right: 0;
+         background-color: rgb(242, 241, 243);
+        padding: 20px;
+        margin-right: 5vh;
+        border-radius: 15px;
+    
+    
+    }
+    #Volymfransar-Nyttset{
+        grid-area: fr7;
+        position: relative;
+        left: 0;
+         background-color: rgb(242, 241, 243);
+        padding: 20px;
+        margin-left: 5vh;
+        border-radius: 15px;
+    
+    
+    }
+    #Volymfransar-Påfyllning{
+        grid-area: fr8;
+        position: relative;
+        right: 0;
+         background-color: rgb(242, 241, 243);
+        padding: 20px;
+        margin-right: 5vh;
+        border-radius: 15px;
+    
+    
+    }
+    #Mix-Nyttset{
+        grid-area: fr9;
+        position: relative;
+        left: 0;
+         background-color: rgb(242, 241, 243);
+        padding: 20px;
+        margin-left: 5vh;
+        border-radius: 15px;
+    
+    
+    }
+    #Mixfransar-Påfyllning{
+        grid-area: fr10;
+        position: relative;
+        right: 0;
+         background-color: rgb(242, 241, 243);
+        padding: 20px;
+        margin-right: 5vh;
+        border-radius: 15px;
+    
+    
+    }
+    #Singelfransar-Nyttset{
+        grid-area: fr11;
+        position: relative;
+        left: 0;
+         background-color: rgb(242, 241, 243);
+        padding: 20px;
+        margin-left: 5vh;
+        border-radius: 15px;
+    
+    
+    }
+    #Singelfransar-Påfyllning{
+        grid-area: fr12;
+        position: relative;
+        right: 0;
+         background-color: rgb(242, 241, 243);
+        padding: 20px;
+        margin-right: 5vh;
+        border-radius: 15px;
+    
+    
+    
+    }
+    #Quickfix{
+        grid-area: fr13;
+        position: relative;
+        left: 0;
+         background-color: rgb(242, 241, 243);
+        padding: 20px;
+        margin-left: 5vh;
+        border-radius: 15px;
+    
+    
+    }
+    #Borttagningavfransar{
+        grid-area: fr14;
+        position: relative;
+        right: 0;
+         background-color: rgb(242, 241, 243);
+        padding: 20px;
+        margin-right: 5vh;
+        border-radius: 15px;
+    
+    
+    }
+    
+    
+    
+    #lashlift{
+        grid-area: li ;
+        grid-template-areas: 
+        'ru'
+        'li1' 
+        'li2';
+        grid-template-rows: 20vh 30vh 30vh;
+        grid-gap: 10px;
+        display: grid;
+    
+    }
+    
+    #Lashliftinkfärgningochkeratin{
+        grid-area: li1;
+        position: relative;
+        left: 0;
+         background-color: rgb(242, 241, 243);
+        padding: 20px;
+        margin-left: 5vh;
+        border-radius: 15px;
+    
+    
+    }
+    #Lashlift-Browlift{
+        grid-area: li2;
+        position: relative;
+        right: 0;
+         background-color: rgb(242, 241, 243);
+        padding: 20px;
+        margin-right: 5vh;
+        border-radius: 15px;
+    
+    
+    }
+    
+    #nails{
+        grid-area: nl ;
+        grid-template-areas: 
+        'ru'
+        'nl1' 
+        'nl2'
+        'nl3' 
+        'nl4'
+        'nl5' 
+        'nl6'
+        'nl7' 
+        'non ';
+        grid-template-rows: 20vh 30vh 30vh 30vh 30vh 30vh 30vh 30vh 30vh;
+        grid-gap: 10px;
+        display: grid;
+    
+    
+    }
+    
+    #Återbesökextremdesign{
+        grid-area: nl1;
+        position: relative;
+        left: 0;
+         background-color: rgb(242, 241, 243);
+        padding: 20px;
+        margin-left: 5vh;
+        border-radius: 15px;
+    
+    
+    }
+    #Nagelförlängning-Extremdesign{
+        grid-area: nl2;
+        position: relative;
+        right: 0;
+         background-color: rgb(242, 241, 243);
+        padding: 20px;
+        margin-right: 5vh;
+        border-radius: 15px;
+    
+    
+    }
+    #Borttagningavmaterial{
+        grid-area: nl3;
+        position: relative;
+        left: 0;
+         background-color: rgb(242, 241, 243);
+        padding: 20px;
+        margin-left: 5vh;
+        border-radius: 15px;
+    
+    
+    }
+    #FörstärkningmedGellack-Design-franska{
+        grid-area: nl4;
+        position: relative;
+        right: 0;
+         background-color: rgb(242, 241, 243);
+        padding: 20px;
+        margin-right: 5vh;
+        border-radius: 15px;
+    
+    
+    }
+    #FörstärkningmedGellack-Enkeldesign{
+        grid-area: nl5;
+        position: relative;
+        left: 0;
+         background-color: rgb(242, 241, 243);
+        padding: 20px;
+        margin-left: 5vh;
+        border-radius: 15px;
+    
+    
+    }
+    #Lagning-av-1-3-naglar{
+        grid-area: nl6;
+        position: relative;
+        right: 0;
+         background-color: rgb(242, 241, 243);
+        padding: 20px;
+        margin-right: 5vh;
+        border-radius: 15px;
+    
+    
+    }
+    #Manikyr{
+        grid-area: nl7;
+        position: relative;
+        left: 0;
+         background-color: rgb(242, 241, 243);
+        padding: 20px;
+        margin-left: 5vh;
+        border-radius: 15px;
+    
+    
+    }
+    
+    
+    #tattoo{
+        grid-area: tt ;
+        grid-template-areas: 
+        'ru'
+        'tt1'
+        'tt2';
+        grid-template-rows: 20vh 30vh 30vh;
+        grid-gap: 10px;
+        display: grid;
+    
+    
+    }
+    
+    #Tatueringmellan{
+        grid-area: tt1;
+        position: relative;
+        left: 0;
+         background-color: rgb(242, 241, 243);
+        padding: 20px;
+        margin-left: 5vh;
+        border-radius: 15px;
+    
+    
+    }
+    #Tatueringstor{
+        grid-area: tt2;
+        position: relative;
+        right: 0;
+         background-color: rgb(242, 241, 243);
+        padding: 20px;
+        margin-right: 5vh;
+        border-radius: 15px;
+    
+    
+    }
+    
+    #student{
+        grid-area: stu;
+        grid-template-areas: 
+        'ru'
+        'stu1'
+        'stu2';
+        grid-template-rows: 20vh 30vh 30vh;
+        grid-gap: 10px;
+        display: grid;
+        
+    
+    }
+    
+    #Nysetvolym-singel-mix{
+        grid-area: stu1;
+        position: relative;
+        left: 0;
+         background-color: rgb(242, 241, 243);
+        padding: 20px;
+        margin-left: 5vh;
+        border-radius: 15px;
+    
+    
+    }
+    #Påfyllningvolymsingelellermix{
+        grid-area: stu2;
+        position: relative;
+        right: 0;
+         background-color: rgb(242, 241, 243);
+        padding: 20px;
+        margin-right: 5vh;
+        border-radius: 5px;
+        border-radius: 15px;
+    
+    }
+    
+    
+    #container3{
+        grid-template-areas: 
+        'hd'
+        'mn3'
+        'ft';
+        grid-template-rows:auto auto 30vh ;   
+        display: grid;
+        grid-gap: 10px;
+    
+    }
+    
+    #main3{
+        grid-area: mn3;
+        grid-template-areas: 
+        'insta'
+        'pics';
+        grid-template-rows: 50vh auto;
+        grid-gap: 10px;
+        display: grid;
+    
+    }
+    
+    #follow{
+        grid-area: insta;
+        justify-content: center;
+        display: flex;   
+        align-items: center; 
+        background-image: url(../img/nr5.jpg);
+        background-position-y: -300px;
+        background-position-x: -100px;
+        background-size: contain;
+        background-size:cover;
+        
+    }
+    
+    #followinstapic{
+        justify-content: center;
+        display: flex;
+    }
+    
+    #insfollow{
+        font-family: 'Parisienne', cursive;
+    
+    }
+    
+    #instagramlook{
+        height: 100px;
+    }
+    
+    #picsec{
+        grid-area: pics;
+        grid-template-areas: 
+        'pic1' 
+        'pic2' 
+        'pic3' 
+        'pic4' 
+        'pic5' 
+        'pic6'
+        'pic7' 
+        'pic8' 
+        'pic9'
+        'pic10' 
+        'pic11' 
+        'pic12';
+        grid-template-rows: 30vh 30vh 30vh 30vh 30vh 30vh 30vh 30vh 30vh 30vh 30vh 30vh;
+        display: grid;
+        grid-gap: 30px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    
+    #pic1{
+        grid-area: pic1;
+        background-image: url(../img/frans1.jpg);
+        background-size:cover;
+    }
+    
+    #pic2{
+        grid-area: pic2;
+        background-image: url(../img/botoxputtin.jpg);
+        background-size: cover;
+    
+        
+    }
+    #pic3{
+        grid-area: pic3;
+        background-image: url(../img/nailmaking.jpg);
+        background-size:cover;
+      
+        
+    }
+    #pic4{
+        grid-area: pic4;
+        background-image: url(../img/frans3.jpg);
+        background-size: cover;
+
+        
+    }
+    #pic5{
+       
+        grid-area: pic5;
+        background-image: url(../img/lashputting.jpg);
+        background-size: cover;
+    
+        
+    }
+    #pic6{
+        grid-area: pic6;
+     
+        background-image: url(../img/frans2.jpg);
+          background-size: cover;
+   
+    }
+    #pic7{  
+        grid-area: pic7;
+      background-image: url(https://images.cdn.yle.fi/image/upload/f_auto,fl_progressive/fl_keep_iptc/q_88/w_1920,h_1080,c_crop,x_0,y_81/w_700/v1573212809/39-6098005dc552264eec4.jpg);
+      background-size: cover;
+       
+    }
+    #pic8{
+        grid-area: pic8;
+        background-image: url(../img/tattoo1.jpg);
+        background-size: cover;
+       
+       
+    }
+    #pic9{
+        grid-area: pic9;
+        background-image: url(../img/eyebrowurus.png);
+        background-size: cover;
+        background-position-y: -15px;
+        
+    }
+    #pic10{
+        grid-area: pic10;
+        background-image: url(../img/nailsfix.jpg);
+        background-size:cover;
+        
+    }
+    #pic11{
+        grid-area: pic11;
+        background-image: url(../img/facial.png);
+        background-size: cover;
+       
+    }
+    #pic12{
+        grid-area: pic12;
+        background-image: url(../img/tattoingpers.jpg);
+        background-size: cover;
+        
+        
+    }
+    
+    #container4{
+        display: grid;
+        grid-template-areas: 
+        'hd'
+        'mn4'
+        'ft';
+        grid-template-rows: auto auto 30vh ;
+        
+    }
+    
+    .person{
+        height: 30vh;
+        margin-left: 1fr;
+        border-radius: 100px;
+    }
+    
+    #main4{
+        grid-area: mn4; 
+        grid-template-areas: 
+        'teampic'
+        'teaminfo'
+        'velcom4';   
+        grid-template-rows: 50vh auto 17vh;
+        grid-gap: 10px;
+        display: grid;
+        }
+        
+    #teampicup{
+        grid-area: teampic;
+        background-image: url(../img/nr4.jpg);
+        background-size: contain;        
+        background-size:cover;
+        background-position-y: -300px;
+        background-position-x: -100px;
+        justify-content: center;
+        align-items: flex-end;
+        display: flex;
+        border-radius: 5px;
+    }
+        
+     
+    #teaminfo{
+        grid-area: teaminfo;
+        grid-template-areas: 
+        'tmp1' 
+        'tminf1'
+        'tmp2'
+        'tminf2'
+        'tmp3'
+        'tminf3'
+        'tmp4'
+        'tminf4'
+        'tmp5'
+        'tminf5';
+        grid-template-rows: auto auto auto auto auto auto auto auto auto auto;
+        grid-gap:20px;
+        display: grid;
+        
+        
+    }
+    
+    .persname{
+        font-size: 25px;
+        font-family: 'Abel', sans-serif;
+    }
+    
+    .perssloga{
+        font-size: 15px;
+        font-family: 'Abel', sans-serif;
+    }
+    
+    .perstxt{
+        font-size: 10px;
+        font-family: 'Abel', sans-serif;
+    }
+        
+    #teampic1{
+        grid-area: tmp1;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+       
+        
+    }
+    
+    #teamtxt1{
+        grid-area:tminf1 ;
+        background-color: rgb(228, 217, 213);
+        margin-right: 10px;
+        margin-left: 10px;
+        border-radius: 20px;
+        padding: 20px;
+    }
+        
+    
+    
+    #teampic2{
+        grid-area: tmp2;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        
+    }
+    
+    #teamtxt2{
+        grid-area:tminf2;
+        background-color: rgb(228, 217, 213);
+        margin-right: 10px;
+        margin-left: 10px;
+        border-radius: 20px;
+        padding: 20px;
+    
+    }
+    
+    
+    #teampic3{
+        grid-area: tmp3;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        
+    }
+        
+    #teamtxt3{
+        grid-area:tminf3;
+        background-color: rgb(228, 217, 213);
+        margin-right: 10px;
+        margin-left: 10px;
+        border-radius: 20px;
+        padding: 20px;
+    
+    }
+    
+    
+    #teampic4{
+        grid-area: tmp4;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        
+    }
+    
+    
+    #teamtxt4{
+        grid-area: tminf4;
+        background-color: rgb(228, 217, 213);
+        margin-right: 10px;
+        margin-left: 10px;
+        border-radius: 20px;
+        padding: 20px;
+    
+    }    
+        
+    #teampic5{
+        grid-area: tmp5;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        
+    }
+    
+    
+    #teamtxt5{
+        grid-area:tminf5 ;
+        background-color: rgb(228, 217, 213);
+        margin-right: 10px;
+        margin-left: 10px;
+        border-radius: 20px;
+        padding: 20px;
+    
+    }
+    
+        
+    #velkomteam{
+            grid-area: velcom4;
+            align-items: center;
+            justify-content: center;
+            display: flex;
+            font-size: 40px;
+            
+    }
+    
+    
+    #vel1{
+       font-size: 50px;
+       font-family: 'Abel', sans-serif;
+       font-family: 'Parisienne', cursive;
+    }
+    
+
+
+
     
 
 }
