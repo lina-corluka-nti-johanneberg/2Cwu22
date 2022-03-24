@@ -20,6 +20,10 @@ body{
 
 @media screen and (min-width: 501px) {
 
+    .fade-layer{
+        display: none;
+    }
+
     .header2{
         display: none;
     }
@@ -1296,6 +1300,30 @@ height: 300px;
 
 
 @media screen and (max-width: 500px) {
+    
+    .fade-layer{
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: rgba(0, 0, 0, 0.151);
+        display: none;
+        z-index: 5;
+    }
+
+    .visible{
+        display:block
+    }
+
+    .cross{
+        position: absolute;
+        top: 3vh;
+        right: 3vh;
+        z-index: 15;
+        width: 5vh;
+    }
+
     .header{
         display: none;
     }
@@ -1304,7 +1332,53 @@ height: 300px;
         grid-area: hd;
         width: 100%;
         background-color: rgb(233, 213, 226);
+        display: flex;
+        justify-content: center;
+        align-items: center;
 
+    }
+
+    .material-icons{
+        font-size: 5vh;
+    }
+
+    .menuicon{
+        position: absolute;
+        left: 5vw;
+        top: 2.5vh;
+    }
+
+    .navmobile{
+        height: 70vh;
+        width: 100%;
+        position: fixed;
+        top: -100vh;
+        transition: 0.5s;       
+        background-color: rgb(250, 244, 248);
+        box-shadow: 0px 10px 20px rgb(145, 133, 135);
+        z-index: 10;
+    }
+
+    .line{
+        border-bottom: black 2px solid;
+        width: 100%;
+        margin: 1vh;
+    }
+
+    .show{
+        top: 0;
+    }
+
+    .navlist{
+        height: 60vh;
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0;
+        font-size: 5vh;
+        padding: 5vh;
     }
 
     #container{
@@ -1316,32 +1390,37 @@ height: 300px;
         'ft' ;
         grid-template-rows:auto auto 30vh ;
         grid-gap: 10px;
-        background-color: transparent;
+        background-color: rgb(250, 244, 248);
     
     }
     
-    .header{
-        grid-area: hd;
-        width: 100%;
-        background-color: rgb(233, 213, 226);
-        
-    }
     
     .navdesktop{
-        width: 100%;
-        display: flex;
-        justify-content: space-evenly;
-        align-items: center;
+        display: none;
     }
     
     .menuitem{
-        font-size: 20px;
         color: rgb(0, 0, 0);
         font-family: 'Abel', sans-serif;
+        display: flex;
+        align-items: center;
+        height: 100%;
+        width: 100%;
+    }
+
+    li{
+        width: 100%;
+        text-align: center;
+        height: 100%;
     }
     
     .logo{
-        height: 20vh;
+        height: 9vh;
+        margin: 0;
+    }
+
+    .logopic{
+        height: 9vh;
     }
     
     .footer{
@@ -1617,7 +1696,7 @@ height: 300px;
         'hd'
         'mn2'
         'ft';
-        grid-template-rows:auto auto 30vh ;  
+        grid-template-rows: 10vh auto 30vh ;  
         grid-gap: 10px;
         display: grid;
     }
